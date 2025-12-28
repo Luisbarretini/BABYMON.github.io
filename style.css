@@ -1,0 +1,101 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #ffffff;
+    color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* INICIO */
+.inicio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.inicio p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* INTEGRANTES */
+.integrantes {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.integrantes h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
