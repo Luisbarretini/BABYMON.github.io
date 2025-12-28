@@ -3,138 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>BABYMONSTER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">BABYMONSTER</div>
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#integrantes">Integrantes</a></li>
-      <li><a href="#multimedia">Multimedia</a></li>
-      <li class="dropdown">
-        <a href="#">Miembros ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#ahyeon">Ahyeon</a></li>
-          <li><a href="#ruka">Ruka</a></li>
-          <li><a href="#pharita">Pharita</a></li>
-          <li><a href="#rami">Rami</a></li>
-          <li><a href="#rora">Rora</a></li>
-          <li><a href="#asa">Asa</a></li>
-          <li><a href="#chiquita">Chiquita</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="integrantes.html">Integrantes</a>
+  <a href="multimedia.html">Multimedia</a>
+
+  <div class="dropdown">
+    <span>Miembros ▾</span>
+    <div class="dropdown-content">
+      <a href="ahyeon.html">Ahyeon</a>
+      <a href="ruka.html">Ruka</a>
+      <a href="pharita.html">Pharita</a>
+      <a href="rami.html">Rami</a>
+      <a href="rora.html">Rora</a>
+      <a href="asa.html">Asa</a>
+      <a href="chiquita.html">Chiquita</a>
+    </div>
+  </div>
+</nav>
 
 <!-- INICIO -->
-<section id="inicio" class="inicio">
-  <div class="inicio-img">
-    <img src="https://i.imgur.com/8X9xG3A.jpg" alt="BABYMONSTER">
+<section class="inicio">
+
+  <!-- IMAGEN -->
+  <div class="inicio-img fade-left">
+    <img src="img/grupo.jpg" alt="BABYMONSTER">
   </div>
-  <div class="inicio-texto">
+
+  <!-- HISTORIA -->
+  <div class="inicio-text fade-right">
     <h1>BABYMONSTER</h1>
+
     <p>
-      BABYMONSTER es un grupo femenino surcoreano formado por YG Entertainment.
-      Está compuesto por siete integrantes con talento vocal, rap y baile
-      excepcionales.
+      BABYMONSTER es un grupo femenino de K-pop formado por YG Entertainment.
+      El grupo fue presentado tras un extenso proceso de entrenamiento,
+      mostrando desde el inicio el alto nivel de talento de cada integrante.
     </p>
+
     <p>
-      El grupo destaca por su estilo poderoso, carisma escénico y una identidad
-      que mezcla lo clásico del K-Pop con una energía fresca y moderna.
+      Está compuesto por siete integrantes provenientes de distintos países,
+      lo que le da al grupo una identidad global y diversa.
+      Cada miembro destaca por sus habilidades vocales, rap y baile.
+    </p>
+
+    <p>
+      Desde antes de su debut oficial, BABYMONSTER generó gran expectativa
+      gracias a sus presentaciones, covers y actuaciones en vivo,
+      consolidándose como una de las nuevas promesas del K-pop.
     </p>
   </div>
+
 </section>
-
-<!-- INTEGRANTES -->
-<section id="integrantes" class="integrantes">
-  <h2>Integrantes</h2>
-
-  <div class="cards">
-
-    <div class="card" id="ahyeon">
-      <img src="https://i.imgur.com/JnYkJ4T.jpg">
-      <h3>Ahyeon</h3>
-      <p>Nombre real: Jung Ah-yeon</p>
-      <p>País: Corea del Sur</p>
-      <p>Rol: Vocalista / Rapper</p>
-      <p>Nacimiento: 11 Abril 2007</p>
-    </div>
-
-    <div class="card" id="ruka">
-      <img src="https://i.imgur.com/q6F5YxA.jpg">
-      <h3>Ruka</h3>
-      <p>Nombre real: Kawai Ruka</p>
-      <p>País: Japón</p>
-      <p>Rol: Rapper / Bailarina</p>
-      <p>Nacimiento: 20 Marzo 2002</p>
-    </div>
-
-    <div class="card" id="pharita">
-      <img src="https://i.imgur.com/6CzF1Fs.jpg">
-      <h3>Pharita</h3>
-      <p>Nombre real: Pharita Chaikong</p>
-      <p>País: Tailandia</p>
-      <p>Rol: Vocalista</p>
-      <p>Nacimiento: 26 Agosto 2005</p>
-    </div>
-
-    <div class="card" id="rami">
-      <img src="https://i.imgur.com/OUh4O7D.jpg">
-      <h3>Rami</h3>
-      <p>Nombre real: Shin Haram</p>
-      <p>País: Corea del Sur</p>
-      <p>Rol: Vocalista</p>
-      <p>Nacimiento: 17 Octubre 2007</p>
-    </div>
-
-    <div class="card" id="rora">
-      <img src="https://i.imgur.com/2hHXY2H.jpg">
-      <h3>Rora</h3>
-      <p>Nombre real: Lee Dain</p>
-      <p>País: Corea del Sur</p>
-      <p>Rol: Vocalista</p>
-      <p>Nacimiento: 14 Agosto 2008</p>
-    </div>
-
-    <div class="card" id="asa">
-      <img src="https://i.imgur.com/4fWZx9m.jpg">
-      <h3>Asa</h3>
-      <p>Nombre real: Enami Asa</p>
-      <p>País: Japón</p>
-      <p>Rol: Rapper</p>
-      <p>Nacimiento: 17 Abril 2006</p>
-    </div>
-
-    <div class="card" id="chiquita">
-      <img src="https://i.imgur.com/wmZQhY5.jpg">
-      <h3>Chiquita</h3>
-      <p>Nombre real: Riracha Phondechaphiphat</p>
-      <p>País: Tailandia</p>
-      <p>Rol: Vocalista</p>
-      <p>Nacimiento: 17 Febrero 2009</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- MULTIMEDIA -->
-<section id="multimedia" class="multimedia">
-  <h2>Multimedia</h2>
-  <div class="videos">
-    <iframe src="https://www.youtube.com/embed/olDWm2veCrM" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/Zp-Jhuhq0bQ" allowfullscreen></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 BABYMONSTER Fan Page</p>
-</footer>
 
 </body>
 </html>
