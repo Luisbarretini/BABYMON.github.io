@@ -1,56 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BABYMON</title>
-<style>
-body{
-  margin:0;
-  background:#0f0f0f;
-  font-family:Arial, sans-serif;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-}
-.app{
-  width:360px;
-  background:#1a1a1a;
-  border-radius:22px;
-  padding:25px;
-  text-align:center;
-  box-shadow:0 0 25px rgba(0,0,0,.8);
-}
-h1{
-  color:#fff;
-  margin-bottom:25px;
-}
-button{
-  width:100%;
-  padding:15px;
-  margin:10px 0;
-  border:none;
-  border-radius:14px;
-  background:#ff0066;
-  color:#fff;
-  font-size:16px;
-  cursor:pointer;
-}
-button:hover{
-  background:#cc0052;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>BABYMONSTER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app">
-  <h1>BABYMON</h1>
-  <button>Instagram</button>
-  <button>WhatsApp</button>
-  <button>Contacto</button>
-</div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1 class="logo">BABYMONSTER</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#integrantes">Integrantes</a>
+            <a href="multimedia.html">Multimedia</a>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio">
+        <h2>Bienvenidos a BABYMONSTER</h2>
+        <p>
+            BABYMONSTER es un grupo femenino de K-pop conocido por su talento,
+            energía y carisma. Aquí podrás conocer a cada integrante
+            y ver contenido multimedia.
+        </p>
+    </section>
+
+    <!-- INTEGRANTES -->
+    <section id="integrantes" class="integrantes">
+        <h2>Integrantes</h2>
+
+        <div class="grid">
+            <div class="card">Ahyeon</div>
+            <div class="card">Ruka</div>
+            <div class="card">Pharita</div>
+            <div class="card">Rami</div>
+            <div class="card">Rora</div>
+            <div class="card">Asa</div>
+            <div class="card">Chiquita</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 BABYMONSTER | Fan Page</p>
+    </footer>
 
 </body>
 </html>
