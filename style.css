@@ -2,107 +2,82 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #ffffff;
-  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVBAR */
 .navbar {
   background: #000;
-  color: #fff;
-  padding: 15px 30px;
+  padding: 20px 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
+.navbar a,
+.navbar span {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.dropdown-menu {
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
-  background: #000;
-  padding: 10px;
+  background: #111;
+  top: 30px;
+  min-width: 160px;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* INICIO */
 .inicio {
-  display: flex;
-  padding: 50px;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
 }
 
+/* IMAGEN */
 .inicio-img img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.inicio-texto {
-  max-width: 500px;
-}
-
-/* INTEGRANTES */
-.integrantes {
-  padding: 50px;
-  background: #f5f5f5;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* MULTIMEDIA */
-.multimedia {
-  padding: 50px;
-}
-
-.videos {
+/* TEXTO */
+.inicio-text {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-iframe {
-  width: 300px;
-  height: 200px;
-}
-
-/* FOOTER */
-footer {
-  background: #000;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
   text-align: center;
-  padding: 15px;
+  background: #fff;
+}
+
+.inicio-text h1 {
+  font-size: 64px;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+.inicio-text p {
+  font-size: 24px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
